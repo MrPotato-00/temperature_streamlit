@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime, timedelta
 
-FLASK_URI= st.secrets["url"]
+FLASK_URI= st.secrets["URL"]
 
 @st.cache_data()
 def fetch_data():
