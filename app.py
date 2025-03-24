@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime, timedelta
 
-FLASK_URI= "http://16.170.228.59:5000/predict"
+FLASK_URI= st.secrets["url"]
 
 @st.cache_data()
 def fetch_data():
