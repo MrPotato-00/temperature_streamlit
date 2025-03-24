@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 FLASK_URI= st.secrets["URL"]
 
-@st.cache_data(ttl= 86400)
+@st.cache_data(ttl= 14400)
 def fetch_data():
     response= requests.get(FLASK_URI)
     if response.status_code==200:
